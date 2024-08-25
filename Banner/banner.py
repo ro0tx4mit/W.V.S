@@ -11,7 +11,7 @@ class Banner:
     \_/\_/    (_)    \_/    (_) |____/  
                                          
      W . V . S  -  Web Vulnerability Scanner
-          Developed By: SUDO EXPLOIT
+          Developed By: SUDO 3XPLOIT
                 Version: 1.0
             '''
             cprint(banner, 'cyan', attrs=['bold'])
