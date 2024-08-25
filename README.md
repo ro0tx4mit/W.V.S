@@ -1,11 +1,11 @@
-Here’s a more polished and detailed version of the `README.md` file for your project:
+Here’s an updated version of the `README.md` file with the output section included:
 
 ```markdown
 # Web Vulnerability Scanner (W.V.S)
 
 ## Overview
 
-**Web Vulnerability Scanner (W.V.S)** is a comprehensive tool designed to identify and report security vulnerabilities on web pages. This Python-based application scrapes specified URLs for vulnerabilities listed in a predefined table format, filters critical and high-severity issues, and generates a report. Additionally, it sends an email notification if any critical vulnerabilities are detected.
+**Web Vulnerability Scanner (W.V.S)** is a Python-based tool designed to identify and report security vulnerabilities on web pages. The tool scrapes specified URLs for vulnerabilities listed in a predefined table format, filters critical and high-severity issues, and generates a CSV report. If critical vulnerabilities are detected, an email notification is sent.
 
 ## Features
 
@@ -90,6 +90,49 @@ To set up the Web Vulnerability Scanner, follow these steps:
 
    - If critical vulnerabilities are found, an email notification will be sent to the recipient specified in the script.
 
+## Output
+
+### Console Output
+
+When running the script, you will see console messages indicating the progress of the scraping process:
+
+- **Scraping Notification**:
+  ```
+  Scraping <URL>...
+  ```
+
+- **Added Vulnerabilities**:
+  ```
+  Added vulnerabilities from <URL>.
+  ```
+
+- **CSV Save Confirmation**:
+  ```
+  Critical vulnerabilities report saved as 'critical_vulnerabilities_report.csv'.
+  ```
+
+- **Email Notification**:
+  ```
+  Notification email sent.
+  ```
+
+### CSV Report
+
+The CSV file `critical_vulnerabilities_report.csv` will contain columns for:
+
+- **CVE ID**: The unique identifier for the vulnerability.
+- **Description**: A brief description of the vulnerability.
+- **Severity**: The severity level of the vulnerability (e.g., Critical, High).
+- **Affected Products**: The products affected by the vulnerability.
+
+Here is an example of the CSV file format:
+
+```
+CVE ID,Description,Severity,Affected Products
+CVE-2024-1234,"Description of the vulnerability",Critical,"Product A, Product B"
+CVE-2024-5678,"Another vulnerability description",High,"Product C"
+```
+
 ## Dependencies
 
 This project requires the following Python packages:
@@ -124,9 +167,8 @@ Thank you for using Web Vulnerability Scanner (W.V.S)! Your contributions and fe
 
 ### Enhancements:
 
-- **Professional Tone**: The language has been formalized to reflect a professional tone.
-- **Detailed Instructions**: Clear and concise instructions have been provided for setup and usage.
-- **Customization Sections**: Specific sections for email and banner customization make it easier to configure the tool.
-- **Contributing and License Information**: Standard sections for contributing and licensing have been included for clarity.
+- **Detailed Output Section**: Added a detailed description of the console and CSV report outputs.
+- **Examples Provided**: Added examples to help users understand the format of the output.
+- **Professional Formatting**: Ensured that the formatting and descriptions are clear and professional.
 
-Feel free to adjust the placeholders and contact information according to your project specifics.
+Feel free to adjust the placeholders and examples according to your specific project details.
