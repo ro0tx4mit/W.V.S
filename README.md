@@ -9,11 +9,11 @@ Here’s an updated version of the `README.md` file with the output section incl
 
 ## Menu
 ```
- __        __     __     __      ____  
- \ \      / /     \ \   / /     / ___|
-  \ \ /\ / /       \ \ / /      \___ \
-   \ V  V /    _    \ V /    _   ___) |
-    \_/\_/    (_)    \_/    (_) |____/  
+   __        __     __     __      ____  
+   \ \      / /     \ \   / /     / ___|
+    \ \ /\ / /       \ \ / /      \___ \
+     \ V  V /    _    \ V /    _   ___) |
+      \_/\_/    (_)    \_/    (_) |____/  
 
      W . V . S  -  Web Vulnerability Scanner
      Developed By: SUDO EXPLOIT
