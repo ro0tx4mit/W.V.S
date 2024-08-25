@@ -7,6 +7,21 @@ Here’s an updated version of the `README.md` file with the output section incl
 
 **Web Vulnerability Scanner (W.V.S)** is a Python-based tool designed to identify and report security vulnerabilities on web pages. The tool scrapes specified URLs for vulnerabilities listed in a predefined table format, filters critical and high-severity issues, and generates a CSV report. If critical vulnerabilities are detected, an email notification is sent.
 
+## Menu
+```
+ __        __     __     __      ____  
+ \ \      / /     \ \   / /     / ___|
+  \ \ /\ / /       \ \ / /      \___ \
+   \ V  V /    _    \ V /    _   ___) |
+    \_/\_/    (_)    \_/    (_) |____/  
+
+     W . V . S  -  Web Vulnerability Scanner
+     Developed By: SUDO EXPLOIT
+     Version: 1.0
+
+Enter a URL to scrape for vulnerabilities (or type 'done' to finish):
+
+'''
 ## Features
 
 - **Web Scraping**: Extracts vulnerability data from HTML tables on specified web pages.
