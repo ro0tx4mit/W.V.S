@@ -21,7 +21,7 @@ Here’s an updated version of the `README.md` file with the output section incl
 
 Enter a URL to scrape for vulnerabilities (or type 'done' to finish):
 
-'''
+```
 ## Features
 
 - **Web Scraping**: Extracts vulnerability data from HTML tables on specified web pages.
