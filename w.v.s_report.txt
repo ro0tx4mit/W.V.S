@@ -1,0 +1,108 @@
+Certainly! Here is a detailed report on the Web Vulnerability Scanner (W.V.S) module:
+
+---
+
+# Web Vulnerability Scanner (W.V.S) Module Report
+
+## Introduction
+
+The Web Vulnerability Scanner (W.V.S) is a Python-based tool designed to identify and report security vulnerabilities found on web pages. This module is particularly useful for security analysts and developers who need to assess the security posture of web applications and websites.
+
+## Objective
+
+The primary objective of the W.V.S module is to automate the process of detecting vulnerabilities listed on web pages, focusing on critical and high-severity issues. It provides functionalities to scrape web pages, process vulnerability data, generate reports, and send notifications when necessary.
+
+## Module Components
+
+The W.V.S module consists of several key components that work together to achieve its objectives:
+
+### 1. User Input Module
+
+**Functionality**:
+- Allows users to input URLs of the web pages they wish to scan for vulnerabilities.
+
+**Components**:
+- Input prompts for URLs.
+- Storage for user-provided URLs.
+
+### 2. Scrape Module
+
+**Functionality**:
+- Handles HTTP requests to fetch the HTML content from the specified URLs.
+- Parses the HTML content to locate and extract vulnerability information from tables.
+
+**Components**:
+- **`requests`**: For making HTTP requests to retrieve web page content.
+- **`BeautifulSoup`**: For parsing HTML and extracting relevant data from tables.
+
+**Process**:
+1. Sends an HTTP request to the URL.
+2. Parses the response content to find a table with the ID `vulnerability-table`.
+3. Extracts details from each row in the table, including CVE ID, description, severity, and affected products.
+
+### 3. Data Processing
+
+**Functionality**:
+- Processes the extracted data to filter out vulnerabilities based on severity.
+- Prepares the filtered data for reporting.
+
+**Components**:
+- **`pandas`**: For data manipulation and exporting to CSV format.
+
+**Process**:
+1. Filters vulnerabilities to identify those classified as "Critical" or "High".
+2. Organizes the data into a structured format suitable for CSV export.
+
+### 4. Reporting & Notification
+
+**Functionality**:
+- Saves the processed vulnerability data to a CSV file.
+- Sends an email notification if critical vulnerabilities are detected.
+
+**Components**:
+- **`pandas`**: For saving the data to a CSV file.
+- **`smtplib`**: For sending email notifications.
+
+**Process**:
+1. Writes the filtered data to `critical_vulnerabilities_report.csv`.
+2. Constructs an email containing details of the detected vulnerabilities.
+3. Sends the email to a specified recipient.
+
+### 5. Output & Logs
+
+**Functionality**:
+- Provides console messages indicating the status of the scanning process.
+- Logs the results to the CSV file and sends email notifications.
+
+**Components**:
+- Console output for user feedback.
+- CSV file for detailed vulnerability reports.
+- Email alerts for critical vulnerabilities.
+
+## Workflow
+
+1. **User Input**: Users enter the URLs they want to scan.
+2. **Scraping**: The tool retrieves and parses the HTML content from the provided URLs.
+3. **Data Processing**: Extracted data is filtered to isolate critical and high-severity vulnerabilities.
+4. **Reporting**: The filtered data is saved to a CSV file, and an email notification is sent if critical vulnerabilities are found.
+5. **Output**: Results are displayed on the console, and a CSV report is generated for further review.
+
+## Benefits
+
+- **Automation**: Automates the tedious process of vulnerability scanning and reporting.
+- **Efficiency**: Quickly identifies critical and high-severity vulnerabilities across multiple URLs.
+- **Notification**: Provides timely alerts through email, ensuring that critical issues are addressed promptly.
+- **Data Management**: Stores vulnerability data in an easily accessible CSV format for analysis and record-keeping.
+
+## Limitations
+
+- **Dependency on Table Format**: The module assumes vulnerabilities are listed in a table with a specific ID (`vulnerability-table`). Changes to the web page structure may require adjustments to the scraping logic.
+- **Email Configuration**: Users must configure email settings and SMTP server details for notifications to work correctly.
+
+## Conclusion
+
+The Web Vulnerability Scanner (W.V.S) module is a valuable tool for identifying and reporting security vulnerabilities on web pages. It streamlines the process of vulnerability detection, data processing, and reporting, making it easier for security professionals to manage and respond to potential threats.
+
+---
+
+This report provides a comprehensive overview of the module's functionality, workflow, and benefits. Adjust the details as needed to match any additional specifics or updates related to your project.
