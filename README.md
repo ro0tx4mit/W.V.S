@@ -17,7 +17,7 @@ Here’s an updated version of the `README.md` file with the output section incl
        \_/\_/    (_)    \_/    (_) |____/  
 
      W . V . S  -  Web Vulnerability Scanner
-     Developed By: SUDO EXPLOIT
+     Developed By: SUDO 3XPLOIT
      Version: 1.0
 
     Enter a URL to scrape for vulnerabilities (or type 'done' to finish):
@@ -165,7 +165,7 @@ pip install -r requirements.txt
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE). See the LICENSE file for more details.
+This project is licensed under the [Apache-2.0 license](LICENSE). See the LICENSE file for more details.
 
 ## Contributing
 
@@ -173,7 +173,7 @@ Contributions to the Web Vulnerability Scanner are welcome! If you encounter any
 
 ## Contact
 
-For questions, feedback, or inquiries, please contact [your-email@example.com](mailto:your-email@example.com).
+For questions, feedback, or inquiries, please contact [sudo-3xploit.gmail.com](mailto:sudo-3xploit.gmail.com).
 
 ---
 
