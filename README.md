@@ -10,27 +10,17 @@ Here’s an updated version of the `README.md` file with the output section incl
 ## Menu
 ```
 
-     ____    __    _    __    ___ 
-    |    \   \ \  / \  / /   /   \
-    |  |  |   \ \/ _ \/ /   /  -  \
-    |____/     \__/ \__/   /__/ \__\
-                                        
-        Developed By: RO0TX4MIT
-        https://github.com/ro0tx4mit 
-            ro0tx4mit.github.io
-              Version: 1.0
+    __        __     __     __      ____  
+    \ \      / /     \ \   / /     / ___|
+     \ \ /\ / /       \ \ / /      \___ \
+      \ V  V /    _    \ V /    _   ___) |
+       \_/\_/    (_)    \_/    (_) |____/  
 
-usage: dwa.py [-h] [-v] [-q QUERY] [-a AMOUNT] [-p]
+     W . V . S  -  Web Vulnerability Scanner
+     Developed By: SUDO EXPLOIT
+     Version: 1.0
 
-options:
-  -h, --help            show this help message and exit
-  -v, --version         returns darkdump's version
-  -q QUERY, --query QUERY
-                        the keyword or string you want to search on the deepweb
-  -a AMOUNT, --amount AMOUNT
-                        the amount of results you want to retrieve (default: 10)
-  -p, --proxy           use darkdump proxy to increase anonymity
-
+    Enter a URL to scrape for vulnerabilities (or type 'done' to finish):
 ```
 ## Features
 
